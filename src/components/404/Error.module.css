@@ -1,0 +1,60 @@
+.errorSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.errotTitle{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.errorImg{
+    width: 20%;
+    height: auto;
+}
+
+.errorInfo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnDetail:hover{
+    font-size: 0.85rem;
+    background: rgb(2,0,26);
+    background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+} 
+
+.errorButton{
+    background: rgb(2,0,36);
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 15rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.errorButton:hover{
+    font-size: 1.6rem;
+    background: rgb(2,0,26);
+    background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+}

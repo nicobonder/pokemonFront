@@ -1,0 +1,220 @@
+/*menos de 640 */
+@media (max-width: 640px) {
+    .formSection, .form, .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formSection {
+        background-image: url(../Home/pokeStadium1.jpg);
+        width: 100%;
+        height: 90.5vh;
+        overflow:hidden;
+        background-size:cover;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .form{
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 0.3rem;
+        backdrop-filter: blur(1px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 75vh;
+        width: 18rem;
+    }
+
+    label{
+        width: 25%;
+        color: black;
+        left: 0;
+        text-align: left;
+    }
+
+    input {
+        width: 7rem;
+        margin-left: 1.5rem;
+        background-color: rgba(240, 248, 255, 0.9);
+        border-radius: 0.2rem;
+        border: none;
+    }
+
+    .input {
+        margin: 0.3rem 0;
+        display: flex;
+    }
+
+    .formBtn{
+        background: rgb(2,0,36);
+        background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+        appearance: none;
+        outline: none;
+        border: none;
+        font-size: 0.8rem;
+        border-radius: 0.8rem;
+        position: relative;
+        line-height: 1.8rem;
+        width: 8rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        margin-top: 1.2rem;
+    }
+
+    .formBtn:hover{
+        background: rgb(2,0,26);
+        background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+    }
+
+    .notSubmit{
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        appearance: none;
+        font-size: 0.7rem;
+        border-radius: 0.8rem;
+        position: relative;
+        line-height: 1.8rem;
+        width: 9.5rem;
+        margin-top: 1.2rem;
+    }
+
+    .error{
+        color: red;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .showType{
+        margin: 0 0.3rem
+    }
+
+    .typeForm{
+        margin-top: 0.5rem;
+        line-height: 2rem;
+    }
+
+    .typeForm select, typeForm option{
+        font-size: 0.7rem;
+        height: 1.3rem;
+
+    }
+}
+
+/*mas de 640 */
+@media (min-width: 640px) {
+    .formSection, .form, .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formSection {
+        background-image: url(../Home/pokeStadium1.jpg);
+        width: 100%;
+        height: 90.5vh;
+        overflow:hidden;
+        background-size:cover;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .form{
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 0.3rem;
+        backdrop-filter: blur(1px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 70vh;
+        width: 30rem;
+    }
+
+    label{
+        width: 30%;
+        color: black;
+        left: 0;
+        text-align: left;
+    }
+
+    input {
+        width: 8rem;
+        margin-left: 2rem;
+        background-color: rgba(240, 248, 255, 0.9);
+        border-radius: 0.2rem;
+        border: none;
+    }
+
+    .input {
+        margin: 0.3rem 0;
+        display: flex;
+    }
+
+    .inputCreated{
+        margin: 0.3rem;
+        display: flex;
+        width: 8rem;
+    }
+
+    .formBtn{
+        margin-top: 1.5rem;
+    }
+
+    .formBtn{
+        background: rgb(2,0,36);
+        background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+        appearance: none;
+        outline: none;
+        border: none;
+        font-size: 0.8rem;
+        border-radius: 0.8rem;
+        position: relative;
+        line-height: 1.8rem;
+        width: 8rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        margin-top: 1.5rem;
+    }
+
+    .formBtn:hover{
+        background: rgb(2,0,26);
+        background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(255, 0, 0 ,1) 43%, rgba(227,108,255,1) 100%);
+    }
+
+    .notSubmit{
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        appearance: none;
+        font-size: 0.7rem;
+        border-radius: 0.8rem;
+        position: relative;
+        line-height: 1.8rem;
+        width: 10rem;
+        margin-top: 1.5rem;
+    }
+
+    .error{
+        color: red;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .showType{
+        margin: 0 0.3rem
+    }
+}
