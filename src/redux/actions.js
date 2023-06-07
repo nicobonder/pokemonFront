@@ -18,15 +18,14 @@ export const CLEAN_FILTER = "CLEAR_FILTER"
 export const SEARCH_POKEMON = "SEARCH_POKEMON";
 
 export const getPokemons = () => {
-    return function(dispatch) {
-        //return fetch('https://pokemonapi-jzai.onrender.com/pokemons')
-        
+    return async function(dispatch) {
+       
         //return fetch('http://localhost:3001/pokemons')
-        return fetch('https://pokemonback.up.railway.app/pokemons')
-        .then(res => res.json())
-        .then(pokemons => dispatch(
-            {type: GET_POKEMONS, payload: pokemons}
-        ))
+        const res = await fetch('https://pokemonback.up.railway.app/pokemons');
+        const pokemons = await res.json();
+        return dispatch(
+            { type: GET_POKEMONS, payload: pokemons }
+        );
     }
 };
 
