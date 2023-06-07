@@ -22,7 +22,7 @@ export const getPokemons = () => {
         //return fetch('https://pokemonapi-jzai.onrender.com/pokemons')
         
         //return fetch('http://localhost:3001/pokemons')
-        return fetch('http://pokemonback.up.railway.app/pokemons')
+        return fetch('https://pokemonback.up.railway.app/pokemons')
         .then(res => res.json())
         .then(pokemons => dispatch(
             {type: GET_POKEMONS, payload: pokemons}
@@ -35,7 +35,7 @@ export const getPokemonDetail = (id) => {
         //return fetch(`https://pokemonapi-jzai.onrender.com/pokemons/${id}`)    
         //return fetch(`http://localhost:3001/pokemons/${id}`)    
         
-        return fetch(`http://pokemonback.up.railway.app/pokemons/${id}`)    
+        return fetch(`https://pokemonback.up.railway.app/pokemons/${id}`)    
         .then(res => res.json())
         .then(data => dispatch(
             {type: GET_POKEMON_DETAIL, payload: data[0]}
@@ -48,7 +48,7 @@ export const searchPokemon = (name) => {
         try {
             //let info =  await axios.get("https://pokemonapi-jzai.onrender.com/pokemons?name=" + name);
             // let info =  await axios.get("http://localhost:3001/pokemons?name=" + name);
-            let info =  await axios.get("http://pokemonback.up.railway.app?name=" + name);
+            let info =  await axios.get("https://pokemonback.up.railway.app?name=" + name);
             return dispatch({
                 type: "SEARCH_POKEMON",
                 payload: info.data
@@ -63,7 +63,7 @@ export const createPokemon = (pokemon) => {
     return async function(dispatch){
         //const newPokemon = await axios.post(`http://localhost:3001/pokemons/`, pokemon)
 
-        const newPokemon = await axios.post(`http://pokemonback.up.railway.app/pokemons/`, pokemon)
+        const newPokemon = await axios.post(`https://pokemonback.up.railway.app/pokemons/`, pokemon)
         //const newPokemon = await axios.post(`https://pokemonapi-jzai.onrender.com/pokemons/`, pokemon)
        dispatch({type: CREATE_POKEMON, payload: newPokemon})
     }
@@ -73,7 +73,7 @@ export const updatePokemon = (updatePoke) => {
     return async function(dispatch){ //va la ruta del poke que tiene que actualizar
         //await axios.put(`http://localhost:3001/pokemons/${updatePoke.id}`, updatePoke)
 
-        await axios.put(`http://pokemonback.up.railway.app/pokemons/${updatePoke.id}`, updatePoke)
+        await axios.put(`https://pokemonback.up.railway.app/pokemons/${updatePoke.id}`, updatePoke)
         //await axios.put(`https://pokemonapi-jzai.onrender.com/pokemons/${updatePoke.id}`, updatePoke)
         .then((res) => { 
             dispatch({type: UPDATE_POKEMON, payload: res.data}) //res.data da OK
