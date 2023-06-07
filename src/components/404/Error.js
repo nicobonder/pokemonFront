@@ -13,4 +13,7 @@ export default function Error() {
         <img className={s.errorImg} src={sad} alt='Page not found'/>
     </div>
   )
+
 }
+
+
