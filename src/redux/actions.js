@@ -87,7 +87,7 @@ export const updatePokemon = (updatePoke) => {
 export const deletePokemon = (pokemonId) => {
     return async function(dispatch){
        //const deletePoke = await axios.delete(`http://localhost:3001/pokemons/${pokemonId}`, pokemonId )
-       const deletePoke = await axios.delete(`http://pokemonback.up.railway.app/pokemons/${pokemonId}`, pokemonId )
+       const deletePoke = await axios.delete(`https://pokemonback.up.railway.app/pokemons/${pokemonId}`, pokemonId )
        
        // const deletePoke = await axios.delete(`https://pokemonapi-jzai.onrender.com/pokemons/${pokemonId}`, pokemonId )
         dispatch({type: DELETE_POKEMON, payload: deletePoke})
@@ -98,7 +98,7 @@ export const getTypes = () => {
     return async function(dispatch){
         //let info = await axios.get('http://localhost:3001/types', {})
 
-        let info = await axios.get('http://pokemonback.up.railway.app/types', {})
+        let info = await axios.get('https://pokemonback.up.railway.app/types', {})
         //let info = await axios.get('https://pokemonapi-jzai.onrender.com/types', {})
         return dispatch({type: GET_TYPES, payload: info.data})
     }
