@@ -14,8 +14,8 @@ function validate(input){  //va a recibir el estado input con los cambios detect
       errors.name = 'only letters allowed'
   }else if(!input.img){
       errors.img = 'insert an url';
-  }else if(!/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/.test(input.img)){ 
-      errors.img = 'only URL directions allowed'
+  }else if(!/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_+.~#?&/=]*)$/.test(input.img)){
+    errors.img = 'only URL directions allowed'
   }else if(input.hp < 1 || input.hp > 200){
       errors.hp = 'must be a value between 1 and 200'
   }else if(!/^[0-9]+$/.test(input.hp)){ 

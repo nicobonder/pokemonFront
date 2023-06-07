@@ -15,7 +15,7 @@ export default function Filters({ setCurrentPage }) {
   const dispatch = useDispatch();
   const pokemons = useSelector((state) => state.pokemons); //traigo los estados globales
   const types = useSelector((state) => state.types);
-  const sortTypes = types.sort((x, y) => x.name.localeCompare(y.name)); //ordeno types
+  // const sortTypes = types.sort((x, y) => x.name.localeCompare(y.name)); //ordeno types
 
   React.useEffect(() => {
     if (!pokemons[0]) {
